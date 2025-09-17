@@ -1,23 +1,32 @@
 <header>
     <nav class="navbar navbar-expand-lg theme-navbar bg-info-subtle">
         <div class="container-fluid mx-5">
+            <!-- Left section: Logo -->
             <a class="navbar-brand" href="{{ url('/') }}">
                 <h2 class="text-light text-logo">Next Mart</h2>
+                {{-- <img src="{{ asset('assets/img/logo.png') }}" style="max-width: 140px" alt=""> --}}
             </a>
+
+            <!-- Mobile toggle button -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                 aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarScroll">
-                <form class="d-flex me-auto" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search products..."
+                <!-- Center section: Search box -->
+                <div class="d-flex mx-auto my-2 my-lg-0 position-relative"
+                    style="min-width: 400px; max-width: 700px; width: 60%;">
+                    <input class="form-control pe-5" type="search" placeholder="Search products..."
                         aria-label="Search">
-                    <button class="btn btn-light text-secondary" type="submit">Search</button>
-                </form>
+                    <button class="btn btn-link text-secondary position-absolute end-0 top-50 translate-middle-y"
+                        type="submit">
+                        <i class="fa-solid fa-search"></i>
+                    </button>
+                </div>
+
+                <!-- Right section: Navigation items -->
                 <ul class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link text-light">Become a Seller</a>
-                    </li>
                     <li class="nav-item ms-2">
                         <a href="#" class="btn btn-success btn-sm text-light">
                             <i class="fa-solid fa-cart-shopping"></i> Cart
@@ -33,7 +42,6 @@
             </div>
         </div>
     </nav>
-
     <!-- Secondary Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-2">
         <div class="container-fluid">
