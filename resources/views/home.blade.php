@@ -67,24 +67,164 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div> --}}
+        <div class="row mb-5">
+            <div class="col-md-2 mb-2">
+                <div class="card category-card">
+                    <img src="https://placehold.co/300x200/007bff/white?text=Electronics" class="card-img-top"
+                        alt="Electronics">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">Electronics</h6>
+                        <a href="#" class="btn btn-outline-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-3">
+                <div class="card category-card">
+                    <img src="https://placehold.co/300x200/28a745/white?text=Fashion" class="card-img-top" alt="Fashion">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">Fashion</h6>
+                        <a href="#" class="btn btn-outline-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-3">
+                <div class="card category-card">
+                    <img src="https://placehold.co/300x200/fd7e14/white?text=Home+%26+Kitchen" class="card-img-top"
+                        alt="Home & Kitchen">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">Home & Kitchen</h6>
+                        <a href="#" class="btn btn-outline-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-3">
+                <div class="card category-card">
+                    <img src="https://placehold.co/300x200/d63384/white?text=Beauty+%26+Health" class="card-img-top"
+                        alt="Beauty & Health">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">Beauty & Health</h6>
+                        <a href="#" class="btn btn-outline-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-3">
+                <div class="card category-card">
+                    <img src="https://placehold.co/300x200/d63384/white?text=Beauty+%26+Health" class="card-img-top"
+                        alt="Beauty & Health">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">Beauty & Health</h6>
+                        <a href="#" class="btn btn-outline-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-3">
+                <div class="card category-card">
+                    <img src="https://placehold.co/300x200/007bff/white?text=Electronics" class="card-img-top"
+                        alt="Electronics">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">Electronics</h6>
+                        <a href="#" class="btn btn-outline-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-3">
+                <div class="card category-card">
+                    <img src="https://placehold.co/300x200/28a745/white?text=Fashion" class="card-img-top" alt="Fashion">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">Fashion</h6>
+                        <a href="#" class="btn btn-outline-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Product Section -->
         <section>
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="card" style="width: 18rem;">
-                        <img src="{{ asset('assets/img/slider/slider1.png') }}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card’s content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h2 class="mb-4">Top Deals</h2>
+            <div class="row mb-5">
+                <div class="col-md-3 mb-3">
+                    <div class="card category-card">
+                        <img src="{{ asset('assets/img/products/p1.jpg') }}" class="card-img-top" alt="Electronics">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Campus Shoes</h5>
+                            <h3 class="card-title">$4.50.00</h3>
+                            <a href="#" class="btn btn-outline-primary mt-2">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card category-card">
+                        <img src="{{ asset('assets/img/products/p2.jpg') }}" class="card-img-top" alt="Fashion">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Fashion</h5>
+                            <h3 class="card-title">$4.50.00</h3>
+                            <a href="#" class="btn btn-outline-primary mt-2">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card category-card">
+                        <img src="{{ asset('assets/img/products/p3.jpg') }}" class="card-img-top" alt="Home & Kitchen">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Home & Kitchen</h5>
+                            <h3 class="card-title">$4.50.00</h3>
+                            <a href="#" class="btn btn-outline-primary mt-2">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card category-card">
+                        <img src="{{ asset('assets/img/products/p4.jpg') }}" class="card-img-top" alt="Beauty & Health">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Beauty & Health</h5>
+                            <h3 class="card-title">$4.50.00</h3>
+                            <a href="#" class="btn btn-outline-primary mt-2">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card category-card">
+                        <img src="{{ asset('assets/img/products/p5.jpg') }}" class="card-img-top" alt="Electronics">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Electronics</h5>
+                            <h3 class="card-title">$4.50.00</h3>
+                            <a href="#" class="btn btn-outline-primary mt-2">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card category-card">
+                        <img src="{{ asset('assets/img/products/p6.jpg') }}" class="card-img-top" alt="Electronics">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Electronics</h5>
+                            <h3 class="card-title">$4.50.00</h3>
+                            <a href="#" class="btn btn-outline-primary mt-2">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card category-card">
+                        <img src="{{ asset('assets/img/products/p7.jpg') }}" class="card-img-top" alt="Electronics">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Electronics</h5>
+                            <h3 class="card-title">$4.50.00</h3>
+                            <a href="#" class="btn btn-outline-primary mt-2">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card category-card">
+                        <img src="{{ asset('assets/img/products/p8.jpg') }}" class="card-img-top" alt="Electronics">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Electronics</h5>
+                            <h3 class="card-title">$4.50.00</h3>
+                            <a href="#" class="btn btn-outline-primary mt-2">Add to Cart</a>
                         </div>
                     </div>
                 </div>
             </div>
-
         </section>
+
         <!-- Featured Categories -->
         <h2 class="mb-4">Shop by Category</h2>
         <div class="row mb-5">
@@ -100,7 +240,8 @@
             </div>
             <div class="col-md-3 mb-3">
                 <div class="card category-card">
-                    <img src="https://placehold.co/300x200/28a745/white?text=Fashion" class="card-img-top" alt="Fashion">
+                    <img src="https://placehold.co/300x200/28a745/white?text=Fashion" class="card-img-top"
+                        alt="Fashion">
                     <div class="card-body text-center">
                         <h5 class="card-title">Fashion</h5>
                         <a href="#" class="btn btn-outline-primary">Explore</a>
