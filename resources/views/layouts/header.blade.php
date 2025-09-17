@@ -42,21 +42,19 @@
             </div>
         </div>
     </nav>
-    <!-- Secondary Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-2">
+
+    <!-- Secondary Catogory Navigation -->
+    <nav class="navbar navbar-expand-lg py-2 bg-body-tertiary theme-navbar-light">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#categoryNav"
                 aria-controls="categoryNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span> Categories
             </button>
-            <div class="collapse navbar-collapse" id="categoryNav">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
-                    </li>
+            <div class="collapse navbar-collapse justify-content-center" id="categoryNav">
+                <ul class="nav ">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">Electronics</a>
+                        <a class="nav-link dropdown-toggle text-secondary" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Electronics</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Mobile Phones</a></li>
                             <li><a class="dropdown-item" href="#">Laptops</a></li>
@@ -64,8 +62,8 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">Fashion</a>
+                        <a class="nav-link dropdown-toggle text-secondary" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Fashion</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Men's Clothing</a></li>
                             <li><a class="dropdown-item" href="#">Women's Clothing</a></li>
@@ -73,19 +71,20 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home & Kitchen</a>
+                        <a class="nav-link text-secondary" href="#">Home & Kitchen</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Beauty & Health</a>
+                        <a class="nav-link text-secondary" href="#">Beauty & Health</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Books</a>
+                        <a class="nav-link text-secondary" href="#">Books</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Today's Deals</a>
+                        <a class="nav-link text-secondary" href="#">Today's Deals</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
 </header>
