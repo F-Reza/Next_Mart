@@ -1,3 +1,5 @@
-@include('layouts.header')
-@yield('content')
-@include('layouts.footer')
+<main class="py-4">
+    <div class="container">
+        @yield('content')
+    </div>
+</main>
