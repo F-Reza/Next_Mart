@@ -89,7 +89,7 @@
 
         <!-- Category Section -->
         <section class="mb-5">
-            <h2 class="text-center">Shop by Category</h2>
+            <h2 class="text-center section-title ">Shop by Category</h2>
             <div class="row g-4">
                 <!-- Electronics -->
                 <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
@@ -184,14 +184,14 @@
 
         <!-- Product Section -->
         <!-- Top Deals -->
-        <section>
-            <div class="d-flex">
-                <div class="flex-grow-1">
+        <section class="mtb-5" style="margin-top: 60px">
+            <div class="d-flex section-hr">
+                <div class="flex-grow-1 align-self-center">
                     <h2 class="mb-3">Top Deals</h2>
                 </div>
-                <div><a href="#" class="btn btn-primary btn-sm text-light">View All</a></div>
+                <div class="align-self-center"><a href="#" class="btn btn-primary btn-sm text-light">View
+                        All</a></div>
             </div>
-
             <div class="row mb-5">
                 <div class="col-md-3 mb-3 category-card">
                     <div class="card product-card h-100">
@@ -258,11 +258,13 @@
 
         <!-- Recently Viewed-->
         <section>
-            <div class="d-flex">
-                <div class="flex-grow-1">
+            <div class="d-flex section-hr">
+                <div class="align-self-center">
                     <h2 class="mb-3">Recently Viewed</h2>
                 </div>
-                <div><a href="#" class="btn btn-primary btn-sm text-light">View All</a></div>
+                <div class="ms-auto align-self-center"><a href="#" class="btn btn-primary btn-sm text-light">View
+                        All</a>
+                </div>
             </div>
             <div class="row mb-5">
                 <div class="col-md-3 mb-3 category-card">
@@ -314,11 +316,12 @@
 
         <!-- Featured Products -->
         <section>
-            <div class="d-flex">
-                <div class="flex-grow-1">
+            <div class="d-flex section-hr">
+                <div class="align-self-center">
                     <h2 class="mb-3">Featured Products</h2>
                 </div>
-                <div><a href="#" class="btn btn-primary btn-sm text-light">View All</a></div>
+                <div class="ms-auto align-self-center"><a href="#" class="btn btn-primary btn-sm text-light">View
+                        All</a></div>
             </div>
             <div class="row mb-5 theme-products">
                 <div class="col-md-3 mb-3 category-card">
