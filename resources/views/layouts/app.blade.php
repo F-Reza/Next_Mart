@@ -19,7 +19,9 @@
 <body>
     @include('layouts.header')
 
-    @include('layouts.main')
+    <main class="py-4">
+        @yield('content')
+    </main>
 
     @include('layouts.footer')
 

@@ -53,37 +53,47 @@
             <div class="collapse navbar-collapse justify-content-center" id="categoryNav">
                 <ul class="nav ">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-secondary" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">Electronics</a>
+                        <a class="nav-link dropdown-toggle text-secondary" href="{{ url('/category/subcategory/') }}"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">Electronics</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Mobile Phones</a></li>
-                            <li><a class="dropdown-item" href="#">Laptops</a></li>
-                            <li><a class="dropdown-item" href="#">Accessories</a></li>
+                            <li><a class="dropdown-item" href="{{ url('/category/subcategory/mobile-phones') }}">Mobile
+                                    Phones</a>
+                            </li>
+                            <li><a class="dropdown-item" href="{{ url('/category/subcategory/laptops') }}">Laptops</a>
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="{{ url('/category/subcategory/accessories') }}">Accessories</a>
+                            </li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-secondary" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">Fashion</a>
+                        <a class="nav-link dropdown-toggle text-secondary" href="{{ url('/category/subcategory') }}"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">Fashion</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Men's Clothing</a></li>
-                            <li><a class="dropdown-item" href="#">Women's Clothing</a></li>
-                            <li><a class="dropdown-item" href="#">Shoes</a></li>
+                            <li><a class="dropdown-item" href="{{ url('/category/subcategory/mens_clothing') }}">Men's
+                                    Clothing</a>
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="{{ url('/category/subcategory/womens_clothing') }}">Women's
+                                    Clothing</a>
+                            </li>
+                            <li><a class="dropdown-item" href="{{ url('/category/subcategory/shoes') }}">Shoes</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-secondary" href="#">Home & Kitchen</a>
+                        <a class="nav-link text-secondary" href="{{ url('/category/category1') }}">Home & Kitchen</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-secondary" href="#">Beauty & Health</a>
+                        <a class="nav-link text-secondary" href="{{ url('/category/category1') }}">Beauty & Health</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-secondary" href="#">Sports</a>
+                        <a class="nav-link text-secondary" href="{{ url('/category/category1') }}">Sports</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-secondary" href="#">Jewelry</a>
+                        <a class="nav-link text-secondary" href="{{ url('/category/category1') }}">Jewelry</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-secondary" href="#">Today's Deals</a>
+                        <a class="nav-link text-secondary" href="{{ url('/category/category1') }}">Today's Deals</a>
                     </li>
                 </ul>
             </div>

@@ -172,8 +172,8 @@
                     <div class="card product-card h-100">
                         <img src="{{ asset('assets/img/products/p19.jpg') }}" class="card-img-top" alt="Electronics">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Campus Shoes</h5>
-                            <h3 class="card-title">$4.50.00</h3>
+                            <h6 class="card-title">Campus Shoes</h6>
+                            <h5 class="card-title">$4.50.00</h5>
                             <a href="#" class="btn btn-outline-primary mt-2 theme-cart-btn btn-outline-success">Add
                                 to Cart</a>
                         </div>
@@ -183,8 +183,8 @@
                     <div class="card product-card">
                         <img src="{{ asset('assets/img/products/p20.jpg') }}" class="card-img-top" alt="Fashion">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Fashion</h5>
-                            <h3 class="card-title">$4.50.00</h3>
+                            <h6 class="card-title">Fashion</h6>
+                            <h5 class="card-title">$4.50.00</h5>
                             <a href="#" class="btn btn-outline-primary mt-2 theme-cart-btn btn-outline-success">Add
                                 to Cart</a>
                         </div>
@@ -194,8 +194,8 @@
                     <div class="card product-card">
                         <img src="{{ asset('assets/img/products/p22.jpg') }}" class="card-img-top" alt="Home & Kitchen">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Home & Kitchen</h5>
-                            <h3 class="card-title">$4.50.00</h3>
+                            <h6 class="card-title">Home & Kitchen</h6>
+                            <h5 class="card-title">$4.50.00</h5>
                             <a href="#" class="btn btn-outline-primary mt-2 theme-cart-btn btn-outline-success">Add
                                 to Cart</a>
                         </div>
@@ -205,8 +205,8 @@
                     <div class="card product-card">
                         <img src="{{ asset('assets/img/products/p36.jpg') }}" class="card-img-top" alt="Beauty & Health">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Beauty & Health</h5>
-                            <h3 class="card-title">$4.50.00</h3>
+                            <h6 class="card-title">Beauty & Health</h6>
+                            <h5 class="card-title">$4.50.00</h5>
                             <a href="#" class="btn btn-outline-primary mt-2 theme-cart-btn btn-outline-success">Add
                                 to Cart</a>
                         </div>
@@ -228,8 +228,8 @@
                     <div class="card product-card">
                         <img src="{{ asset('assets/img/products/p23.jpg') }}" class="card-img-top" alt="Electronics">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Electronics</h5>
-                            <h3 class="card-title">$4.50.00</h3>
+                            <h6 class="card-title">Electronics</h6>
+                            <h5 class="card-title">$4.50.00</h5>
                             <a href="#" class="btn btn-outline-primary mt-2 theme-cart-btn btn-outline-success">Add
                                 to Cart</a>
                         </div>
@@ -239,8 +239,8 @@
                     <div class="card product-card">
                         <img src="{{ asset('assets/img/products/p24.jpg') }}" class="card-img-top" alt="Electronics">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Electronics</h5>
-                            <h3 class="card-title">$4.50.00</h3>
+                            <h6 class="card-title">Electronics</h6>
+                            <h5 class="card-title">$4.50.00</h5>
                             <a href="#" class="btn btn-outline-primary mt-2 theme-cart-btn btn-outline-success">Add
                                 to Cart</a>
                         </div>
@@ -250,8 +250,8 @@
                     <div class="card product-card">
                         <img src="{{ asset('assets/img/products/p17.jpg') }}" class="card-img-top" alt="Electronics">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Electronics</h5>
-                            <h3 class="card-title">$4.50.00</h3>
+                            <h6 class="card-title">Electronics</h6>
+                            <h5 class="card-title">$4.50.00</h5>
                             <a href="#" class="btn btn-outline-primary mt-2 theme-cart-btn btn-outline-success">Add
                                 to Cart</a>
                         </div>
@@ -261,8 +261,8 @@
                     <div class="card product-card">
                         <img src="{{ asset('assets/img/products/p18.jpg') }}" class="card-img-top" alt="Electronics">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Electronics</h5>
-                            <h3 class="card-title">$4.50.00</h3>
+                            <h6 class="card-title">Electronics</h6>
+                            <h5 class="card-title">$4.50.00</h5>
                             <a href="#" class="btn btn-outline-primary mt-2 theme-cart-btn btn-outline-success">Add
                                 to Cart</a>
                         </div>
