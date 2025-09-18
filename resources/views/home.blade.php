@@ -3,9 +3,10 @@
 @section('title', 'Home - Next Mart')
 
 @section('content')
+
     <div class="container">
-        <!-- Hero Section -->
-        {{-- <div class="p-5 mb-4 bg-light rounded-3 hero-section">
+        {{-- <!-- Hero Section -->
+        <div class="p-5 mb-4 bg-light rounded-3 hero-section">
             <div class="container-fluid py-5 text-center">
                 <h1 class="display-5 fw-bold">Welcome to Next Mart</h1>
                 <p class="col-md-8 fs-4 mx-auto">Discover amazing products at unbeatable prices. Shop with confidence and
@@ -81,7 +82,8 @@
                         </div>
                         <div class="text-center">
                             <h6 class="card-title">Electronics</h6>
-                            <a href="#" class="btn btn-outline-primary btn-sm mt-2">Explore</a>
+                            <a href="{{ url('/category/subcategory') }}"
+                                class="btn btn-outline-primary btn-sm mt-2">Explore</a>
                         </div>
                     </div>
                 </div>
@@ -94,7 +96,8 @@
                         </div>
                         <div class="text-center">
                             <h6 class="card-title">Fashion</h6>
-                            <a href="#" class="btn btn-outline-success btn-sm mt-2">Explore</a>
+                            <a href="{{ url('/category/subcategory') }}"
+                                class="btn btn-outline-success btn-sm mt-2">Explore</a>
                         </div>
                     </div>
                 </div>
@@ -108,7 +111,8 @@
                         </div>
                         <div class="text-center">
                             <h6 class="card-title">Home & Kitchen</h6>
-                            <a href="#" class="btn btn-outline-warning btn-sm mt-2">Explore</a>
+                            <a href="{{ url('/category/subcategory') }}"
+                                class="btn btn-outline-warning btn-sm mt-2">Explore</a>
                         </div>
                     </div>
                 </div>
@@ -122,7 +126,8 @@
                         </div>
                         <div class="text-center">
                             <h6 class="card-title">Beauty & Health</h6>
-                            <a href="#" class="btn btn-outline-danger btn-sm mt-2">Explore</a>
+                            <a href="{{ url('/category/subcategory') }}"
+                                class="btn btn-outline-danger btn-sm mt-2">Explore</a>
                         </div>
                     </div>
                 </div>
@@ -136,7 +141,8 @@
                         </div>
                         <div class="text-center">
                             <h6 class="card-title">Sports</h6>
-                            <a href="#" class="btn btn-outline-info btn-sm mt-2">Explore</a>
+                            <a href="{{ url('/category/subcategory') }}"
+                                class="btn btn-outline-info btn-sm mt-2">Explore</a>
                         </div>
                     </div>
                 </div>
@@ -150,7 +156,8 @@
                         </div>
                         <div class="text-center">
                             <h6 class="card-title">Jewelry</h6>
-                            <a href="#" class="btn btn-outline-secondary btn-sm mt-2">Explore</a>
+                            <a href="{{ url('/category/subcategory') }}"
+                                class="btn btn-outline-secondary btn-sm mt-2">Explore</a>
                         </div>
                     </div>
                 </div>
@@ -170,9 +177,13 @@
             <div class="row mb-5">
                 <div class="col-md-3 mb-3 category-card">
                     <div class="card product-card h-100">
-                        <img src="{{ asset('assets/img/products/p19.jpg') }}" class="card-img-top" alt="Electronics">
+                        <a href="{{ url('/product/product1/details') }}">
+                            <img src="{{ asset('assets/img/products/p19.jpg') }}" class="card-img-top"
+                                alt="Electronics"></a>
                         <div class="card-body text-center">
-                            <h6 class="card-title">Campus Shoes</h6>
+                            <a href="{{ url('/product/product1/details') }}">
+                                <h6 class="card-title">Campus Shoes</h6>
+                            </a>
                             <h5 class="card-title">$4.50.00</h5>
                             <a href="#" class="btn btn-outline-primary mt-2 theme-cart-btn btn-outline-success">Add
                                 to Cart</a>
@@ -181,9 +192,13 @@
                 </div>
                 <div class="col-md-3 mb-3 category-card">
                     <div class="card product-card">
-                        <img src="{{ asset('assets/img/products/p20.jpg') }}" class="card-img-top" alt="Fashion">
+                        <a href="{{ url('/product/product1/details') }}">
+                            <img src="{{ asset('assets/img/products/p20.jpg') }}" class="card-img-top"
+                                alt="Fashion"></a>
                         <div class="card-body text-center">
-                            <h6 class="card-title">Fashion</h6>
+                            <a href="{{ url('/product/product1/details') }}">
+                                <h6 class="card-title">Fashion</h6>
+                            </a>
                             <h5 class="card-title">$4.50.00</h5>
                             <a href="#" class="btn btn-outline-primary mt-2 theme-cart-btn btn-outline-success">Add
                                 to Cart</a>
@@ -192,9 +207,13 @@
                 </div>
                 <div class="col-md-3 mb-3 category-card">
                     <div class="card product-card">
-                        <img src="{{ asset('assets/img/products/p22.jpg') }}" class="card-img-top" alt="Home & Kitchen">
+                        <a href="{{ url('/product/product1/details') }}">
+                            <img src="{{ asset('assets/img/products/p22.jpg') }}" class="card-img-top"
+                                alt="Home & Kitchen"></a>
                         <div class="card-body text-center">
-                            <h6 class="card-title">Home & Kitchen</h6>
+                            <a href="{{ url('/product/product1/details') }}">
+                                <h6 class="card-title">Home & Kitchen</h6>
+                            </a>
                             <h5 class="card-title">$4.50.00</h5>
                             <a href="#" class="btn btn-outline-primary mt-2 theme-cart-btn btn-outline-success">Add
                                 to Cart</a>
@@ -203,9 +222,13 @@
                 </div>
                 <div class="col-md-3 mb-3 category-card">
                     <div class="card product-card">
-                        <img src="{{ asset('assets/img/products/p36.jpg') }}" class="card-img-top" alt="Beauty & Health">
+                        <a href="{{ url('/product/product1/details') }}">
+                            <img src="{{ asset('assets/img/products/p36.jpg') }}" class="card-img-top"
+                                alt="Beauty & Health"></a>
                         <div class="card-body text-center">
-                            <h6 class="card-title">Beauty & Health</h6>
+                            <a href="{{ url('/product/product1/details') }}">
+                                <h6 class="card-title">Beauty & Health</h6>
+                            </a>
                             <h5 class="card-title">$4.50.00</h5>
                             <a href="#" class="btn btn-outline-primary mt-2 theme-cart-btn btn-outline-success">Add
                                 to Cart</a>
@@ -398,7 +421,7 @@
                             alt="Electronics">
                         <div class="card-body text-center">
                             <h5 class="card-title">Electronics</h5>
-                            <a href="#" class="btn btn-outline-primary">Explore</a>
+                            <a href="{{ url('/category/subcategory') }}" class="btn btn-outline-primary">Explore</a>
                         </div>
                     </div>
                 </div>
@@ -408,7 +431,7 @@
                             alt="Fashion">
                         <div class="card-body text-center">
                             <h5 class="card-title">Fashion</h5>
-                            <a href="#" class="btn btn-outline-primary">Explore</a>
+                            <a href="{{ url('/category/subcategory') }}" class="btn btn-outline-primary">Explore</a>
                         </div>
                     </div>
                 </div>
@@ -418,7 +441,7 @@
                             alt="Home & Kitchen">
                         <div class="card-body text-center">
                             <h5 class="card-title">Home & Kitchen</h5>
-                            <a href="#" class="btn btn-outline-primary">Explore</a>
+                            <a href="{{ url('/category/subcategory') }}" class="btn btn-outline-primary">Explore</a>
                         </div>
                     </div>
                 </div>
@@ -428,7 +451,7 @@
                             alt="Beauty & Health">
                         <div class="card-body text-center">
                             <h5 class="card-title">Beauty & Health</h5>
-                            <a href="#" class="btn btn-outline-primary">Explore</a>
+                            <a href="{{ url('/category/subcategory') }}" class="btn btn-outline-primary">Explore</a>
                         </div>
                     </div>
                 </div>
@@ -462,11 +485,10 @@
             </div>
         </section>
 
-
     </div>
 @endsection
 
-@section('styles')
+@push('styles')
     <style>
         .hero-section {
             background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -485,4 +507,4 @@
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
     </style>
-@endsection
+@endpush

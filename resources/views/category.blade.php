@@ -5,7 +5,7 @@
 @section('content')
 
     <div class="container-fluid bg-light p-2">
-        <h1 class="text-center"><i class="fa-solid fa-layer-group"></i> Category</h1>
+        <h1 class="text-center"><i class="fa-solid fa-tag"></i> Category</h1>
     </div>
     <div class="container">
         <!-- Product Categorie -->
@@ -17,7 +17,7 @@
                             alt="Electronics">
                         <div class="card-body text-center">
                             <h5 class="card-title">Electronics</h5>
-                            <a href="#" class="btn btn-outline-primary">Explore</a>
+                            <a href="{{ url('/category/subcategory') }}" class="btn btn-outline-primary">Explore</a>
                         </div>
                     </div>
                 </div>
@@ -27,7 +27,7 @@
                             alt="Fashion">
                         <div class="card-body text-center">
                             <h5 class="card-title">Fashion</h5>
-                            <a href="#" class="btn btn-outline-primary">Explore</a>
+                            <a href="{{ url('/category/subcategory') }}" class="btn btn-outline-primary">Explore</a>
                         </div>
                     </div>
                 </div>
@@ -37,7 +37,7 @@
                             alt="Home & Kitchen">
                         <div class="card-body text-center">
                             <h5 class="card-title">Home & Kitchen</h5>
-                            <a href="#" class="btn btn-outline-primary">Explore</a>
+                            <a href="{{ url('/category/subcategory') }}" class="btn btn-outline-primary">Explore</a>
                         </div>
                     </div>
                 </div>
@@ -47,7 +47,7 @@
                             alt="Beauty & Health">
                         <div class="card-body text-center">
                             <h5 class="card-title">Beauty & Health</h5>
-                            <a href="#" class="btn btn-outline-primary">Explore</a>
+                            <a href="{{ url('/category/subcategory') }}" class="btn btn-outline-primary">Explore</a>
                         </div>
                     </div>
                 </div>
@@ -64,9 +64,12 @@
             <div class="row mb-5 theme-products">
                 <div class="col-md-3 mb-3 category-card">
                     <div class="card product-card h-100">
-                        <img src="{{ asset('assets/img/products/p33.jpg') }}" class="card-img-top" alt="Smartphone">
+                        <a href="{{ url('/category/category1/product1/details') }}">
+                            <img src="{{ asset('assets/img/products/p33.jpg') }}" class="card-img-top" alt="Smartphone"></a>
                         <div class="card-body">
-                            <h5 class="card-title">Premium Smartphone</h5>
+                            <a href="{{ url('/category/category1/product1/details') }}">
+                                <h5 class="card-title">Premium Smartphone</h5>
+                            </a>
                             <p class="card-text">Latest model with advanced features and great camera.</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <span class="h5 mb-0 text-primary">$599.99</span>
@@ -77,9 +80,12 @@
                 </div>
                 <div class="col-md-3 mb-3 category-card">
                     <div class="card product-card h-100">
-                        <img src="{{ asset('assets/img/products/p40.jpg') }}" class="card-img-top" alt="Laptop">
+                        <a href="{{ url('/category/category1/product1/details') }}">
+                            <img src="{{ asset('assets/img/products/p40.jpg') }}" class="card-img-top" alt="Laptop"></a>
                         <div class="card-body">
-                            <h5 class="card-title">Ultra Thin Laptop</h5>
+                            <a href="{{ url('/category/category1/product1/details') }}">
+                                <h5 class="card-title">Ultra Thin Laptop</h5>
+                            </a>
                             <p class="card-text">Powerful performance in a lightweight design.</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <span class="h5 mb-0 text-primary">$899.99</span>
@@ -90,9 +96,13 @@
                 </div>
                 <div class="col-md-3 mb-3 category-card">
                     <div class="card product-card h-100">
-                        <img src="{{ asset('assets/img/products/p42.jpg') }}" class="card-img-top" alt="Headphones">
+                        <a href="{{ url('/category/category1/product1/details') }}">
+                            <img src="{{ asset('assets/img/products/p42.jpg') }}" class="card-img-top"
+                                alt="Headphones"></a>
                         <div class="card-body">
-                            <h5 class="card-title">Wireless Headphones</h5>
+                            <a href="{{ url('/category/category1/product1/details') }}">
+                                <h5 class="card-title">Wireless Headphones</h5>
+                            </a>
                             <p class="card-text">Premium sound quality with noise cancellation.</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <span class="h5 mb-0 text-primary">$199.99</span>
@@ -103,9 +113,13 @@
                 </div>
                 <div class="col-md-3 mb-3 category-card">
                     <div class="card product-card h-100">
-                        <img src="{{ asset('assets/img/products/p45.jpg') }}" class="card-img-top" alt="Smart Watch">
+                        <a href="{{ url('/category/category1/product1/details') }}">
+                            <img src="{{ asset('assets/img/products/p45.jpg') }}" class="card-img-top"
+                                alt="Smart Watch"></a>
                         <div class="card-body">
-                            <h5 class="card-title">Smart Watch</h5>
+                            <a href="{{ url('/category/category1/product1/details') }}">
+                                <h5 class="card-title">Smart Watch</h5>
+                            </a>
                             <p class="card-text">Track your fitness and stay connected.</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <span class="h5 mb-0 text-primary">$249.99</span>

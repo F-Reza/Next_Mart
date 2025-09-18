@@ -28,7 +28,7 @@
                 <!-- Right section: Navigation items -->
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item ms-2">
-                        <a href="#" class="btn btn-success btn-sm text-light">
+                        <a href="{{ url('/cart-list/product') }}" class="btn btn-success btn-sm text-light">
                             <i class="fa-solid fa-cart-shopping"></i> Cart
                             <span class="badge bg-danger ms-1">3</span>
                         </a>
@@ -53,7 +53,7 @@
             <div class="collapse navbar-collapse justify-content-center" id="categoryNav">
                 <ul class="nav ">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-secondary" href="{{ url('/category/subcategory/') }}"
+                        <a class="nav-link dropdown-toggle text-secondary" href="{{ url('/category/subcategory') }}"
                             role="button" data-bs-toggle="dropdown" aria-expanded="false">Electronics</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="{{ url('/category/subcategory/mobile-phones') }}">Mobile
