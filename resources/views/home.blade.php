@@ -26,13 +26,24 @@
                     aria-label="Slide 3"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
                     aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
+                    <img src="{{ asset('assets/img/sliders/slider6.png') }}" class="d-block w-100" alt="slider">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Slide label</h5>
+                        <p>Some representative placeholder content for the main slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
                     <img src="{{ asset('assets/img/sliders/slider1.png') }}" class="d-block w-100" alt="slider">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
+                        <p>Some representative placeholder content for the second slide.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -52,7 +63,14 @@
                 <div class="carousel-item">
                     <img src="{{ asset('assets/img/sliders/slider4.png') }}" class="d-block w-100" alt="slider">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
+                        <h5>Forth slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ asset('assets/img/sliders/slider5.png') }}" class="d-block w-100" alt="slider">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Fifth slide label</h5>
                         <p>Some representative placeholder content for the third slide.</p>
                     </div>
                 </div>
@@ -411,47 +429,50 @@
         </section>
 
 
-        <!-- Featured Categories -->
+        <!-- More content to enable scrolling -->
         <section>
-            <h2 class="mb-4">Shop by Category</h2>
+            <h2 class="section-title mt-5">Popular Categories</h2>
             <div class="row mb-5">
-                <div class="col-md-3 mb-3">
-                    <div class="card category-card">
-                        <img src="https://placehold.co/300x200/007bff/white?text=Electronics" class="card-img-top"
+                <div class="col-md-3 mb-4 card category-card">
+                    <div class="card product-card">
+                        <img src="https://placehold.co/300x200/6f42c1/white?text=Electronics" class="card-img-top"
                             alt="Electronics">
                         <div class="card-body text-center">
                             <h5 class="card-title">Electronics</h5>
-                            <a href="{{ url('/category/subcategory') }}" class="btn btn-outline-primary">Explore</a>
+                            <a href="{{ url('/category/subcategory') }}" class="btn btn-outline-primary">Browse</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 mb-3">
-                    <div class="card category-card">
+
+                <div class="col-md-3 mb-4 card category-card">
+                    <div class="card product-card">
                         <img src="https://placehold.co/300x200/28a745/white?text=Fashion" class="card-img-top"
                             alt="Fashion">
                         <div class="card-body text-center">
                             <h5 class="card-title">Fashion</h5>
-                            <a href="{{ url('/category/subcategory') }}" class="btn btn-outline-primary">Explore</a>
+                            <a href="{{ url('/category/subcategory') }}" class="btn btn-outline-primary">Browse</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 mb-3">
-                    <div class="card category-card">
-                        <img src="https://placehold.co/300x200/fd7e14/white?text=Home+%26+Kitchen" class="card-img-top"
-                            alt="Home & Kitchen">
+
+                <div class="col-md-3 mb-4 card category-card">
+                    <div class="card product-card">
+                        <img src="https://placehold.co/300x200/007bff/white?text=Home+Decor" class="card-img-top"
+                            alt="Home Decor">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Home & Kitchen</h5>
-                            <a href="{{ url('/category/subcategory') }}" class="btn btn-outline-primary">Explore</a>
+                            <h5 class="card-title">Home & Decor</h5>
+                            <a href="{{ url('/category/subcategory') }}" class="btn btn-outline-primary">Browse</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 mb-3">
-                    <div class="card category-card">
-                        <img src="https://placehold.co/300x200/d63384/white?text=Beauty+%26+Health" class="card-img-top"
-                            alt="Beauty & Health">
+
+                <div class="col-md-3 mb-4 card category-card">
+                    <div class="card product-card">
+                        <img src="https://placehold.co/300x200/ffc107/white?text=Sports" class="card-img-top"
+                            alt="Sports">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Beauty & Health</h5>
-                            <a href="{{ url('/category/subcategory') }}" class="btn btn-outline-primary">Explore</a>
+                            <h5 class="card-title">Sports</h5>
+                            <a href="{{ url('/category/subcategory') }}" class="btn btn-outline-primary">Browse</a>
                         </div>
                     </div>
                 </div>
@@ -476,13 +497,45 @@
             <div class="container text-center">
                 <div class="row">
                     <div class="container-fluid py-3 text-center col-8">
-                        <img src="{{ asset('assets/img/ads/t2.png') }}" class="category-img" alt="Electronics">
+                        <img src="{{ asset('assets/img/ads/big-sale-banner.jpg') }}" class="category-img"
+                            alt="Electronics">
                     </div>
                     <div class="container-fluid py-3 text-center col-4">
-                        <img src="{{ asset('assets/img/ads/t0.png') }}" class="category-img" alt="Electronics">
+                        <img src="{{ asset('assets/img/products/p15.jpg') }}" class="category-img" alt="Electronics">
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- Additional content to make the page longer -->
+        <section>
+            <div class="row mb-1 mt-5">
+                <div class="col-12">
+                    <h2 class="section-title">Why Shop With Us?</h2>
+                    <div class="row">
+                        <div class="col-md-4 text-center mb-4">
+                            <div class="p-4">
+                                <i class="fas fa-truck fa-3x text-primary mb-3"></i>
+                                <h4>Fast Delivery</h4>
+                                <p>We deliver most products within 2-3 business days.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center mb-4">
+                            <div class="p-4">
+                                <i class="fas fa-shield-alt fa-3x text-primary mb-3"></i>
+                                <h4>Secure Payment</h4>
+                                <p>Your payment information is protected with encryption.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center mb-4">
+                            <div class="p-4">
+                                <i class="fas fa-headset fa-3x text-primary mb-3"></i>
+                                <h4>24/7 Support</h4>
+                                <p>Our customer service team is always ready to help.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </section>
 
     </div>
@@ -494,17 +547,6 @@
             background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
                 url('https://placehold.co/1200x400/007bff/white?text=Next+Mart') center/cover no-repeat;
             color: white;
-        }
-
-        .category-card,
-        .product-card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .category-card:hover,
-        .product-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
     </style>
 @endpush

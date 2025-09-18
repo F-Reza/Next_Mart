@@ -8,52 +8,100 @@
         <h1 class="text-center"><i class="fa-solid fa-tag"></i> Category</h1>
     </div>
     <div class="container">
-        <!-- Product Categorie -->
-        <section>
-            <div class="row mt-3">
-                <div class="col-md-3 mb-3">
-                    <div class="card category-card">
-                        <img src="https://placehold.co/300x200/007bff/white?text=Electronics" class="card-img-top"
-                            alt="Electronics">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Electronics</h5>
-                            <a href="{{ url('/category/subcategory') }}" class="btn btn-outline-primary">Explore</a>
+
+        <!-- Category Section -->
+        <section class="mb-5 mt-5">
+            <div class="row g-4">
+                <!-- Electronics -->
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                    <div class="category-card h-100 shadow-sm">
+                        <div class="category-circle mt-4">
+                            <img src="https://placehold.co/100x100/007bff/white?text=E" class="category-img"
+                                alt="Electronics">
+                        </div>
+                        <div class="text-center">
+                            <h6 class="card-title">Electronics</h6>
+                            <a href="{{ url('/category/subcategory') }}"
+                                class="btn btn-outline-primary btn-sm mt-2">Explore</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 mb-3">
-                    <div class="card category-card">
-                        <img src="https://placehold.co/300x200/28a745/white?text=Fashion" class="card-img-top"
-                            alt="Fashion">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Fashion</h5>
-                            <a href="{{ url('/category/subcategory') }}" class="btn btn-outline-primary">Explore</a>
+
+                <!-- Fashion -->
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                    <div class="category-card h-100 shadow-sm">
+                        <div class="category-circle mt-4">
+                            <img src="https://placehold.co/100x100/28a745/white?text=F" class="category-img" alt="Fashion">
+                        </div>
+                        <div class="text-center">
+                            <h6 class="card-title">Fashion</h6>
+                            <a href="{{ url('/category/subcategory') }}"
+                                class="btn btn-outline-success btn-sm mt-2">Explore</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 mb-3">
-                    <div class="card category-card">
-                        <img src="https://placehold.co/300x200/fd7e14/white?text=Home+%26+Kitchen" class="card-img-top"
-                            alt="Home & Kitchen">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Home & Kitchen</h5>
-                            <a href="{{ url('/category/subcategory') }}" class="btn btn-outline-primary">Explore</a>
+
+                <!-- Home & Kitchen -->
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                    <div class="category-card h-100 shadow-sm">
+                        <div class="category-circle mt-4">
+                            <img src="https://placehold.co/100x100/fd7e14/white?text=H" class="category-img"
+                                alt="Home & Kitchen">
+                        </div>
+                        <div class="text-center">
+                            <h6 class="card-title">Home & Kitchen</h6>
+                            <a href="{{ url('/category/subcategory') }}"
+                                class="btn btn-outline-warning btn-sm mt-2">Explore</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 mb-3">
-                    <div class="card category-card">
-                        <img src="https://placehold.co/300x200/d63384/white?text=Beauty+%26+Health" class="card-img-top"
-                            alt="Beauty & Health">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Beauty & Health</h5>
-                            <a href="{{ url('/category/subcategory') }}" class="btn btn-outline-primary">Explore</a>
+
+                <!-- Beauty & Health -->
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                    <div class="category-card h-100 shadow-sm">
+                        <div class="category-circle mt-4">
+                            <img src="https://placehold.co/100x100/d63384/white?text=B" class="category-img"
+                                alt="Beauty & Health">
+                        </div>
+                        <div class="text-center">
+                            <h6 class="card-title">Beauty & Health</h6>
+                            <a href="{{ url('/category/subcategory') }}"
+                                class="btn btn-outline-danger btn-sm mt-2">Explore</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sports -->
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                    <div class="category-card h-100 shadow-sm">
+                        <div class="category-circle mt-4">
+                            <img src="https://placehold.co/100x100/6f42c1/white?text=S" class="category-img" alt="Sports">
+                        </div>
+                        <div class="text-center">
+                            <h6 class="card-title">Sports</h6>
+                            <a href="{{ url('/category/subcategory') }}"
+                                class="btn btn-outline-info btn-sm mt-2">Explore</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Books -->
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                    <div class="category-card h-100 shadow-sm">
+                        <div class="category-circle mt-4">
+                            <img src="https://placehold.co/100x100/20c997/white?text=J" class="category-img" alt="Books">
+                        </div>
+                        <div class="text-center">
+                            <h6 class="card-title">Jewelry</h6>
+                            <a href="{{ url('/category/subcategory') }}"
+                                class="btn btn-outline-secondary btn-sm mt-2">Explore</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Featured Products -->
         <section>
             <div class="d-flex">
                 <div class="flex-grow-1">
@@ -125,6 +173,56 @@
                                 <span class="h5 mb-0 text-primary">$249.99</span>
                                 <a href="#" class="btn btn-sm btn-outline-success">Add to Cart</a>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Categorie -->
+        <section>
+            <h2 class="section-title mt-3">Popular Categories</h2>
+            <div class="row mb-5">
+                <div class="col-md-3 mb-4 card category-card">
+                    <div class="card product-card">
+                        <img src="https://placehold.co/300x200/6f42c1/white?text=Electronics" class="card-img-top"
+                            alt="Electronics">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Electronics</h5>
+                            <a href="{{ url('/category/subcategory') }}" class="btn btn-outline-primary">Browse</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4 card category-card">
+                    <div class="card product-card">
+                        <img src="https://placehold.co/300x200/28a745/white?text=Fashion" class="card-img-top"
+                            alt="Fashion">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Fashion</h5>
+                            <a href="{{ url('/category/subcategory') }}" class="btn btn-outline-primary">Browse</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4 card category-card">
+                    <div class="card product-card">
+                        <img src="https://placehold.co/300x200/007bff/white?text=Home+Decor" class="card-img-top"
+                            alt="Home Decor">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Home & Decor</h5>
+                            <a href="{{ url('/category/subcategory') }}" class="btn btn-outline-primary">Browse</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4 card category-card">
+                    <div class="card product-card">
+                        <img src="https://placehold.co/300x200/ffc107/white?text=Sports" class="card-img-top"
+                            alt="Sports">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Sports</h5>
+                            <a href="{{ url('/category/subcategory') }}" class="btn btn-outline-primary">Browse</a>
                         </div>
                     </div>
                 </div>

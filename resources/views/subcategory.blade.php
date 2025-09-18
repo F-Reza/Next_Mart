@@ -100,7 +100,7 @@
             </div>
         </section>
 
-        <!-- Product Categorie -->
+        <!-- Featured Products -->
         <section>
             <div class="d-flex">
                 <div class="flex-grow-1">
@@ -143,9 +143,9 @@
                 </div>
                 <div class="col-md-3 mb-3 category-card">
                     <div class="card product-card h-100">
-                        <a href="{{ url('/category/category1/subcategory1/product1/details') }}">
-                            <img src="{{ asset('assets/img/subcategory1/products/p42.jpg') }}" class="card-img-top"
-                                alt="Headphones"></a>
+                        <a href="{{ url('/category/category1/product1/details') }}">
+                            <img src="{{ asset('assets/img/products/p42.jpg') }}" class="card-img-top"
+                                alt="Wireless Headphones"></a>
                         <div class="card-body">
                             <a href="{{ url('/category/category1/product1/details') }}">
                                 <h5 class="card-title">Wireless Headphones</h5>

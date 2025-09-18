@@ -5,8 +5,8 @@
 @section('content')
 
     <!-- Header Section -->
-    <div class="container-fluid cart-header py-3 mb-4">
-        <h1 class="text-center mb-0"><i class="fa-solid fa-cart-shopping"></i> Shopping Cart</h1>
+    <div class="container-fluid cart-header bg-light py-3 mb-4">
+        <h1 class="text-center mb-0 display-6 fw-bold"><i class="fa-solid fa-cart-shopping"></i> Shopping Cart</h1>
     </div>
 
     <!-- Cart Content -->
@@ -168,11 +168,14 @@
                             <strong>Total</strong>
                             <strong>$1,187.46</strong>
                         </div>
-                        <div class="d-grid gap-2">
-                            <button class="btn btn-primary btn-lg">
-                                <i class="fa-solid fa-lock me-2"></i>Proceed to Checkout
-                            </button>
-                        </div>
+                        <a href="{{ url('/checkout/details') }}">
+                            <div class="d-grid gap-2">
+
+                                <button class="btn btn-primary btn-lg">
+                                    <i class="fa-solid fa-lock me-2"></i>Proceed to Checkout
+                                </button>
+                            </div>
+                        </a>
                         <div class="text-center mt-3">
                             <p class="text-muted">or</p>
                             <button class="btn btn-outline-dark">
@@ -203,11 +206,6 @@
 
 @push('styles')
     <style>
-        .cart-header {
-            background: linear-gradient(135deg, #17a2b8 0%, #138496 100%);
-            color: white;
-        }
-
         .cart-item {
             border-radius: 10px;
             box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);

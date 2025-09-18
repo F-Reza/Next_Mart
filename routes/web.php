@@ -7,6 +7,7 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\SubCategoryController;
 use App\Http\Controllers\ProductDetailsController;
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\CheckoutController;
 
 Route::get('/main', function () {
     return ('welcome');
@@ -28,4 +29,4 @@ Route::get('/category/category1/product1/{slug}', [ProductDetailsController::cla
 Route::get('/product/product1/{slug}', [ProductDetailsController::class, 'details'])->name('product-details');
 
 Route::get('/cart-list/{slug}', [CartController::class, 'cartList'])->name('cart-list');
-Route::get('/checkout/{slug}', [CartController::class, 'cartList'])->name('checkout');
+Route::get('/checkout/{slug}', [CheckoutController::class, 'checkout'])->name('checkout');
