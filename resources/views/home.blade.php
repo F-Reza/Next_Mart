@@ -282,6 +282,58 @@
             <div class="row mb-5 theme-products">
                 <div class="col-md-3 mb-3 category-card">
                     <div class="card product-card h-100">
+                        <img src="{{ asset('assets/img/products/p42.jpg') }}" class="card-img-top" alt="Headphones">
+                        <div class="card-body">
+                            <h5 class="card-title">Wireless Headphones</h5>
+                            <p class="card-text">Premium sound quality with noise cancellation.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 mb-0 text-primary">$199.99</span>
+                                <a href="#" class="btn btn-sm btn-outline-success">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3 category-card">
+                    <div class="card product-card h-100">
+                        <img src="{{ asset('assets/img/products/p45.jpg') }}" class="card-img-top" alt="Smart Watch">
+                        <div class="card-body">
+                            <h5 class="card-title">Smart Watch</h5>
+                            <p class="card-text">Track your fitness and stay connected.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 mb-0 text-primary">$249.99</span>
+                                <a href="#" class="btn btn-sm btn-outline-success">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3 category-card">
+                    <div class="card product-card h-100">
+                        <img src="{{ asset('assets/img/products/p14.jpg') }}" class="card-img-top" alt="Smart Watch">
+                        <div class="card-body">
+                            <h5 class="card-title">Natural Glow</h5>
+                            <p class="card-text">Track your fitness and stay connected.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 mb-0 text-primary">$249.99</span>
+                                <a href="#" class="btn btn-sm btn-outline-success">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3 category-card">
+                    <div class="card product-card h-100">
+                        <img src="{{ asset('assets/img/products/p12.jpg') }}" class="card-img-top" alt="Smart Watch">
+                        <div class="card-body">
+                            <h5 class="card-title">Cosmetic</h5>
+                            <p class="card-text">Track your fitness and stay connected.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 mb-0 text-primary">$249.99</span>
+                                <a href="#" class="btn btn-sm btn-outline-success">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3 category-card">
+                    <div class="card product-card h-100">
                         <img src="{{ asset('assets/img/products/p33.jpg') }}" class="card-img-top" alt="Smartphone">
                         <div class="card-body">
                             <h5 class="card-title">Premium Smartphone</h5>
@@ -308,12 +360,12 @@
                 </div>
                 <div class="col-md-3 mb-3 category-card">
                     <div class="card product-card h-100">
-                        <img src="{{ asset('assets/img/products/p42.jpg') }}" class="card-img-top" alt="Headphones">
+                        <img src="{{ asset('assets/img/products/p28.jpg') }}" class="card-img-top" alt="Smart Watch">
                         <div class="card-body">
-                            <h5 class="card-title">Wireless Headphones</h5>
-                            <p class="card-text">Premium sound quality with noise cancellation.</p>
+                            <h5 class="card-title">Mouse</h5>
+                            <p class="card-text">Best performance and stay connected.</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <span class="h5 mb-0 text-primary">$199.99</span>
+                                <span class="h5 mb-0 text-primary">$249.99</span>
                                 <a href="#" class="btn btn-sm btn-outline-success">Add to Cart</a>
                             </div>
                         </div>
@@ -321,9 +373,9 @@
                 </div>
                 <div class="col-md-3 mb-3 category-card">
                     <div class="card product-card h-100">
-                        <img src="{{ asset('assets/img/products/p45.jpg') }}" class="card-img-top" alt="Smart Watch">
+                        <img src="{{ asset('assets/img/products/p35.jpg') }}" class="card-img-top" alt="Smart Watch">
                         <div class="card-body">
-                            <h5 class="card-title">Smart Watch</h5>
+                            <h5 class="card-title">Air Freasher</h5>
                             <p class="card-text">Track your fitness and stay connected.</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <span class="h5 mb-0 text-primary">$249.99</span>
