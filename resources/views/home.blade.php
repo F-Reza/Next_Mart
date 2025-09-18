@@ -5,17 +5,17 @@
 @section('content')
     <div class="container">
         <!-- Hero Section -->
-        <div class="p-5 mb-4 bg-light rounded-3 hero-section">
+        {{-- <div class="p-5 mb-4 bg-light rounded-3 hero-section">
             <div class="container-fluid py-5 text-center">
                 <h1 class="display-5 fw-bold">Welcome to Next Mart</h1>
                 <p class="col-md-8 fs-4 mx-auto">Discover amazing products at unbeatable prices. Shop with confidence and
                     enjoy fast delivery.</p>
                 <button class="btn btn-primary btn-lg" type="button">Shop Now</button>
             </div>
-        </div>
+        </div> --}}
 
         <!-- Carousel Slider -->
-        {{-- <div id="carouselExampleCaptions" class="carousel slide mb-3">
+        <div id="carouselExampleCaptions" class="carousel slide mb-3">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -66,7 +66,96 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
-        </div> --}}
+        </div>
+
+        <!-- Category Section -->
+        <section class="py-5">
+            <h2 class="text-center mb-5">Shop by Category</h2>
+            <div class="row g-4">
+                <!-- Electronics -->
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                    <div class="category-card h-100 shadow-sm">
+                        <div class="category-circle mt-4">
+                            <img src="https://placehold.co/100x100/007bff/white?text=E" class="category-img"
+                                alt="Electronics">
+                        </div>
+                        <div class="text-center">
+                            <h6 class="card-title">Electronics</h6>
+                            <a href="#" class="btn btn-outline-primary btn-sm mt-2">Explore</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fashion -->
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                    <div class="category-card h-100 shadow-sm">
+                        <div class="category-circle mt-4">
+                            <img src="https://placehold.co/100x100/28a745/white?text=F" class="category-img" alt="Fashion">
+                        </div>
+                        <div class="text-center">
+                            <h6 class="card-title">Fashion</h6>
+                            <a href="#" class="btn btn-outline-success btn-sm mt-2">Explore</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Home & Kitchen -->
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                    <div class="category-card h-100 shadow-sm">
+                        <div class="category-circle mt-4">
+                            <img src="https://placehold.co/100x100/fd7e14/white?text=H" class="category-img"
+                                alt="Home & Kitchen">
+                        </div>
+                        <div class="text-center">
+                            <h6 class="card-title">Home & Kitchen</h6>
+                            <a href="#" class="btn btn-outline-warning btn-sm mt-2">Explore</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beauty & Health -->
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                    <div class="category-card h-100 shadow-sm">
+                        <div class="category-circle mt-4">
+                            <img src="https://placehold.co/100x100/d63384/white?text=B" class="category-img"
+                                alt="Beauty & Health">
+                        </div>
+                        <div class="text-center">
+                            <h6 class="card-title">Beauty & Health</h6>
+                            <a href="#" class="btn btn-outline-danger btn-sm mt-2">Explore</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sports -->
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                    <div class="category-card h-100 shadow-sm">
+                        <div class="category-circle mt-4">
+                            <img src="https://placehold.co/100x100/6f42c1/white?text=S" class="category-img"
+                                alt="Sports">
+                        </div>
+                        <div class="text-center">
+                            <h6 class="card-title">Sports</h6>
+                            <a href="#" class="btn btn-outline-info btn-sm mt-2">Explore</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Books -->
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                    <div class="category-card h-100 shadow-sm">
+                        <div class="category-circle mt-4">
+                            <img src="https://placehold.co/100x100/20c997/white?text=B" class="category-img"
+                                alt="Books">
+                        </div>
+                        <div class="text-center">
+                            <h6 class="card-title">Jewelry</h6>
+                            <a href="#" class="btn btn-outline-secondary btn-sm mt-2">Explore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Product Section -->
         <section>
@@ -267,6 +356,19 @@
                 </div>
             </div>
         </div>
+
+        <!-- Mixed Layout Section -->
+        <div class="container text-center">
+            <div class="row">
+                <div class="container-fluid py-3 text-center col-8">
+                    <img src="{{ asset('assets/img/ads/t2.png') }}" class="category-img" alt="Electronics">
+                </div>
+                <div class="container-fluid py-3 text-center col-4">
+                    <img src="{{ asset('assets/img/ads/t0.png') }}" class="category-img" alt="Electronics">
+                </div>
+            </div>
+        </div>
+
     </div>
 @endsection
 

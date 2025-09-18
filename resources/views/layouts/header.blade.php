@@ -77,7 +77,10 @@
                         <a class="nav-link text-secondary" href="#">Beauty & Health</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-secondary" href="#">Books</a>
+                        <a class="nav-link text-secondary" href="#">Sports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#">Jewelry</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-secondary" href="#">Today's Deals</a>
