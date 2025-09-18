@@ -5,12 +5,12 @@
 @section('content')
 
     <div class="container-fluid bg-light p-2">
-        <h1 class="text-center">Category</h1>
+        <h1 class="text-center"><i class="fa-solid fa-layer-group"></i> Category</h1>
     </div>
     <div class="container">
         <!-- Product Categorie -->
         <section>
-            <div class="row mb-5">
+            <div class="row mt-3">
                 <div class="col-md-3 mb-3">
                     <div class="card category-card">
                         <img src="https://placehold.co/300x200/007bff/white?text=Electronics" class="card-img-top"
