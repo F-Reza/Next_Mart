@@ -144,7 +144,7 @@
             <div class="row mb-5">
                 <div class="col-md-3 mb-3">
                     <div class="card category-card">
-                        <img src="{{ asset('assets/img/products/p1.jpg') }}" class="card-img-top" alt="Electronics">
+                        <img src="{{ asset('assets/img/products/p19.jpg') }}" class="card-img-top" alt="Electronics">
                         <div class="card-body text-center">
                             <h5 class="card-title">Campus Shoes</h5>
                             <h3 class="card-title">$4.50.00</h3>
@@ -154,7 +154,7 @@
                 </div>
                 <div class="col-md-3 mb-3">
                     <div class="card category-card">
-                        <img src="{{ asset('assets/img/products/p2.jpg') }}" class="card-img-top" alt="Fashion">
+                        <img src="{{ asset('assets/img/products/p20.jpg') }}" class="card-img-top" alt="Fashion">
                         <div class="card-body text-center">
                             <h5 class="card-title">Fashion</h5>
                             <h3 class="card-title">$4.50.00</h3>
@@ -164,7 +164,7 @@
                 </div>
                 <div class="col-md-3 mb-3">
                     <div class="card category-card">
-                        <img src="{{ asset('assets/img/products/p3.jpg') }}" class="card-img-top" alt="Home & Kitchen">
+                        <img src="{{ asset('assets/img/products/p22.jpg') }}" class="card-img-top" alt="Home & Kitchen">
                         <div class="card-body text-center">
                             <h5 class="card-title">Home & Kitchen</h5>
                             <h3 class="card-title">$4.50.00</h3>
@@ -174,7 +174,7 @@
                 </div>
                 <div class="col-md-3 mb-3">
                     <div class="card category-card">
-                        <img src="{{ asset('assets/img/products/p4.jpg') }}" class="card-img-top" alt="Beauty & Health">
+                        <img src="{{ asset('assets/img/products/p36.jpg') }}" class="card-img-top" alt="Beauty & Health">
                         <div class="card-body text-center">
                             <h5 class="card-title">Beauty & Health</h5>
                             <h3 class="card-title">$4.50.00</h3>
@@ -184,7 +184,7 @@
                 </div>
                 <div class="col-md-3 mb-3">
                     <div class="card category-card">
-                        <img src="{{ asset('assets/img/products/p5.jpg') }}" class="card-img-top" alt="Electronics">
+                        <img src="{{ asset('assets/img/products/p23.jpg') }}" class="card-img-top" alt="Electronics">
                         <div class="card-body text-center">
                             <h5 class="card-title">Electronics</h5>
                             <h3 class="card-title">$4.50.00</h3>
@@ -194,7 +194,7 @@
                 </div>
                 <div class="col-md-3 mb-3">
                     <div class="card category-card">
-                        <img src="{{ asset('assets/img/products/p6.jpg') }}" class="card-img-top" alt="Electronics">
+                        <img src="{{ asset('assets/img/products/p24.jpg') }}" class="card-img-top" alt="Electronics">
                         <div class="card-body text-center">
                             <h5 class="card-title">Electronics</h5>
                             <h3 class="card-title">$4.50.00</h3>
@@ -204,7 +204,7 @@
                 </div>
                 <div class="col-md-3 mb-3">
                     <div class="card category-card">
-                        <img src="{{ asset('assets/img/products/p7.jpg') }}" class="card-img-top" alt="Electronics">
+                        <img src="{{ asset('assets/img/products/p17.jpg') }}" class="card-img-top" alt="Electronics">
                         <div class="card-body text-center">
                             <h5 class="card-title">Electronics</h5>
                             <h3 class="card-title">$4.50.00</h3>
@@ -214,7 +214,7 @@
                 </div>
                 <div class="col-md-3 mb-3">
                     <div class="card category-card">
-                        <img src="{{ asset('assets/img/products/p8.jpg') }}" class="card-img-top" alt="Electronics">
+                        <img src="{{ asset('assets/img/products/p18.jpg') }}" class="card-img-top" alt="Electronics">
                         <div class="card-body text-center">
                             <h5 class="card-title">Electronics</h5>
                             <h3 class="card-title">$4.50.00</h3>
@@ -275,8 +275,7 @@
         <div class="row mb-5">
             <div class="col-md-3 mb-3">
                 <div class="card product-card h-100">
-                    <img src="https://placehold.co/300x200/6f42c1/white?text=Smartphone" class="card-img-top"
-                        alt="Smartphone">
+                    <img src="{{ asset('assets/img/products/p33.jpg') }}" class="card-img-top" alt="Smartphone">
                     <div class="card-body">
                         <h5 class="card-title">Premium Smartphone</h5>
                         <p class="card-text">Latest model with advanced features and great camera.</p>
@@ -289,7 +288,7 @@
             </div>
             <div class="col-md-3 mb-3">
                 <div class="card product-card h-100">
-                    <img src="https://placehold.co/300x200/20c997/white?text=Laptop" class="card-img-top" alt="Laptop">
+                    <img src="{{ asset('assets/img/products/p40.jpg') }}" class="card-img-top" alt="Laptop">
                     <div class="card-body">
                         <h5 class="card-title">Ultra Thin Laptop</h5>
                         <p class="card-text">Powerful performance in a lightweight design.</p>
@@ -302,8 +301,7 @@
             </div>
             <div class="col-md-3 mb-3">
                 <div class="card product-card h-100">
-                    <img src="https://placehold.co/300x200/fd7e14/white?text=Headphones" class="card-img-top"
-                        alt="Headphones">
+                    <img src="{{ asset('assets/img/products/p42.jpg') }}" class="card-img-top" alt="Headphones">
                     <div class="card-body">
                         <h5 class="card-title">Wireless Headphones</h5>
                         <p class="card-text">Premium sound quality with noise cancellation.</p>
@@ -316,8 +314,7 @@
             </div>
             <div class="col-md-3 mb-3">
                 <div class="card product-card h-100">
-                    <img src="https://placehold.co/300x200/e83e8c/white?text=Smart+Watch" class="card-img-top"
-                        alt="Smart Watch">
+                    <img src="{{ asset('assets/img/products/p34.jpg') }}" class="card-img-top" alt="Smart Watch">
                     <div class="card-body">
                         <h5 class="card-title">Smart Watch</h5>
                         <p class="card-text">Track your fitness and stay connected.</p>
