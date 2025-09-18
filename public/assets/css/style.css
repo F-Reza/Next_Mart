@@ -75,4 +75,19 @@
 }
 .category-card:hover {
     transform: translateY(-5px);
+    transform: matrix(-1);
+}
+
+.theme-cart-btn {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    font-weight: 600;
+}
+
+.theme-products img:hover {
+    /* transform: scale(1.05); */
+    /* transition: transform 0.3s ease; */
+    transform: scalex(-1);
+
 }
