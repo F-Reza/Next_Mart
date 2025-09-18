@@ -67,76 +67,6 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div> --}}
-        <div class="row mb-5">
-            <div class="col-md-2 mb-2">
-                <div class="card category-card">
-                    <img src="https://placehold.co/300x200/007bff/white?text=Electronics" class="card-img-top"
-                        alt="Electronics">
-                    <div class="card-body text-center">
-                        <h6 class="card-title">Electronics</h6>
-                        <a href="#" class="btn btn-outline-primary">Explore</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2 mb-3">
-                <div class="card category-card">
-                    <img src="https://placehold.co/300x200/28a745/white?text=Fashion" class="card-img-top" alt="Fashion">
-                    <div class="card-body text-center">
-                        <h6 class="card-title">Fashion</h6>
-                        <a href="#" class="btn btn-outline-primary">Explore</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2 mb-3">
-                <div class="card category-card">
-                    <img src="https://placehold.co/300x200/fd7e14/white?text=Home+%26+Kitchen" class="card-img-top"
-                        alt="Home & Kitchen">
-                    <div class="card-body text-center">
-                        <h6 class="card-title">Home & Kitchen</h6>
-                        <a href="#" class="btn btn-outline-primary">Explore</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2 mb-3">
-                <div class="card category-card">
-                    <img src="https://placehold.co/300x200/d63384/white?text=Beauty+%26+Health" class="card-img-top"
-                        alt="Beauty & Health">
-                    <div class="card-body text-center">
-                        <h6 class="card-title">Beauty & Health</h6>
-                        <a href="#" class="btn btn-outline-primary">Explore</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2 mb-3">
-                <div class="card category-card">
-                    <img src="https://placehold.co/300x200/d63384/white?text=Beauty+%26+Health" class="card-img-top"
-                        alt="Beauty & Health">
-                    <div class="card-body text-center">
-                        <h6 class="card-title">Beauty & Health</h6>
-                        <a href="#" class="btn btn-outline-primary">Explore</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2 mb-3">
-                <div class="card category-card">
-                    <img src="https://placehold.co/300x200/007bff/white?text=Electronics" class="card-img-top"
-                        alt="Electronics">
-                    <div class="card-body text-center">
-                        <h6 class="card-title">Electronics</h6>
-                        <a href="#" class="btn btn-outline-primary">Explore</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2 mb-3">
-                <div class="card category-card">
-                    <img src="https://placehold.co/300x200/28a745/white?text=Fashion" class="card-img-top" alt="Fashion">
-                    <div class="card-body text-center">
-                        <h6 class="card-title">Fashion</h6>
-                        <a href="#" class="btn btn-outline-primary">Explore</a>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <!-- Product Section -->
         <section>
@@ -314,7 +244,7 @@
             </div>
             <div class="col-md-3 mb-3">
                 <div class="card product-card h-100">
-                    <img src="{{ asset('assets/img/products/p34.jpg') }}" class="card-img-top" alt="Smart Watch">
+                    <img src="{{ asset('assets/img/products/p45.jpg') }}" class="card-img-top" alt="Smart Watch">
                     <div class="card-body">
                         <h5 class="card-title">Smart Watch</h5>
                         <p class="card-text">Track your fitness and stay connected.</p>
