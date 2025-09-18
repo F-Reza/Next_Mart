@@ -213,57 +213,200 @@
                     <div class="tab-pane fade" id="reviews" role="tabpanel">
                         <h4>Customer Reviews</h4>
 
-                        <div class="review-card card mb-3">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between">
-                                    <h5 class="card-title">John D.</h5>
-                                    <div class="rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
+                        <!-- Review Form -->
+                        <div class="review-form">
+                            <h5>Add Your Review</h5>
+                            <form id="reviewForm">
+                                <div class="mb-3">
+                                    <label class="form-label">Your Rating</label>
+                                    <div class="star-rating mb-3">
+                                        <i class="far fa-star" data-rating="1"></i>
+                                        <i class="far fa-star" data-rating="2"></i>
+                                        <i class="far fa-star" data-rating="3"></i>
+                                        <i class="far fa-star" data-rating="4"></i>
+                                        <i class="far fa-star" data-rating="5"></i>
+                                        <input type="hidden" id="ratingValue" name="rating" value="0">
                                     </div>
                                 </div>
-                                <h6 class="text-muted">Posted on January 15, 2023</h6>
-                                <p class="card-text">This is hands down the best smartphone I've ever owned. The camera
-                                    quality is exceptional, and the battery life lasts me all day with heavy use.</p>
-                            </div>
+                                <div class="mb-3">
+                                    <label for="reviewTitle" class="form-label">Review Title</label>
+                                    <input type="text" class="form-control" id="reviewTitle"
+                                        placeholder="Enter a title for your review">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="reviewText" class="form-label">Your Review</label>
+                                    <textarea class="form-control" id="reviewText" rows="4" placeholder="Share your experience with this product"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit Review</button>
+                            </form>
                         </div>
 
-                        <div class="review-card card mb-3">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between">
-                                    <h5 class="card-title">Sarah M.</h5>
-                                    <div class="rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                                <h6 class="text-muted">Posted on February 3, 2023</h6>
-                                <p class="card-text">The display is absolutely stunning! I use my phone for photo editing,
-                                    and the color accuracy is impressive. Performance is smooth with no lag.</p>
-                            </div>
-                        </div>
+                        <!-- Reviews List -->
+                        <div class="mt-5">
+                            <h5>Customer Reviews</h5>
 
-                        <div class="review-card card">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between">
-                                    <h5 class="card-title">Michael T.</h5>
-                                    <div class="rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="far fa-star"></i>
+                            <div class="review-card card">
+                                <div class="card-body">
+                                    <div class="review-header">
+                                        <img src="https://placehold.co/50x50/007bff/white?text=JD" class="profile-img"
+                                            alt="John Doe">
+                                        <div class="reviewer-info">
+                                            <h5 class="card-title mb-0">John D.</h5>
+                                            <div class="rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h6 class="review-date">Posted on January 15, 2023</h6>
+                                    <p class="card-text">This is hands down the best smartphone I've ever owned. The camera
+                                        quality is exceptional, and the battery life lasts me all day with heavy use.</p>
+
+                                    <button class="btn btn-outline-secondary btn-reply"
+                                        onclick="toggleReplyForm('replyForm1')">
+                                        <i class="fas fa-reply me-1"></i>Reply
+                                    </button>
+
+                                    <div class="reply-section" id="replyForm1" style="display: none;">
+                                        <div class="review-header">
+                                            <img src="https://placehold.co/40x40/6c757d/white?text=Y" class="profile-img"
+                                                alt="You">
+                                            <div class="reviewer-info">
+                                                <h6 class="card-title mb-0">Your Reply</h6>
+                                            </div>
+                                        </div>
+                                        <form class="reply-form">
+                                            <div class="mb-2">
+                                                <textarea class="form-control" rows="2" placeholder="Write your reply..."></textarea>
+                                            </div>
+                                            <button type="button" class="btn btn-primary btn-sm">Post Reply</button>
+                                            <button type="button" class="btn btn-outline-secondary btn-sm"
+                                                onclick="toggleReplyForm('replyForm1')">Cancel</button>
+                                        </form>
+                                    </div>
+
+                                    <!-- Reply from seller -->
+                                    <div class="reply-section">
+                                        <div class="review-header">
+                                            <img src="https://placehold.co/40x40/28a745/white?text=NM" class="profile-img"
+                                                alt="Next Mart">
+                                            <div class="reviewer-info">
+                                                <h6 class="card-title mb-0">Next Mart Support</h6>
+                                                <span class="review-date">January 16, 2023</span>
+                                            </div>
+                                        </div>
+                                        <p class="mb-0">Thank you for your positive feedback, John! We're thrilled to
+                                            hear you're enjoying your new smartphone.</p>
                                     </div>
                                 </div>
-                                <h6 class="text-muted">Posted on March 10, 2023</h6>
-                                <p class="card-text">Great phone overall, but I wish it had a faster charging option. The
-                                    camera system is phenomenal though, especially in low light conditions.</p>
+                            </div>
+
+                            <div class="review-card card">
+                                <div class="card-body">
+                                    <div class="review-header">
+                                        <img src="https://placehold.co/50x50/d63384/white?text=SM" class="profile-img"
+                                            alt="Sarah Miller">
+                                        <div class="reviewer-info">
+                                            <h5 class="card-title mb-0">Sarah M.</h5>
+                                            <div class="rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h6 class="review-date">Posted on February 3, 2023</h6>
+                                    <p class="card-text">The display is absolutely stunning! I use my phone for photo
+                                        editing, and the color accuracy is impressive. Performance is smooth with no lag.
+                                    </p>
+
+                                    <button class="btn btn-outline-secondary btn-reply"
+                                        onclick="toggleReplyForm('replyForm2')">
+                                        <i class="fas fa-reply me-1"></i>Reply
+                                    </button>
+
+                                    <div class="reply-section" id="replyForm2" style="display: none;">
+                                        <div class="review-header">
+                                            <img src="https://placehold.co/40x40/6c757d/white?text=Y" class="profile-img"
+                                                alt="You">
+                                            <div class="reviewer-info">
+                                                <h6 class="card-title mb-0">Your Reply</h6>
+                                            </div>
+                                        </div>
+                                        <form class="reply-form">
+                                            <div class="mb-2">
+                                                <textarea class="form-control" rows="2" placeholder="Write your reply..."></textarea>
+                                            </div>
+                                            <button type="button" class="btn btn-primary btn-sm">Post Reply</button>
+                                            <button type="button" class="btn btn-outline-secondary btn-sm"
+                                                onclick="toggleReplyForm('replyForm2')">Cancel</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="review-card card">
+                                <div class="card-body">
+                                    <div class="review-header">
+                                        <img src="https://placehold.co/50x50/fd7e14/white?text=MT" class="profile-img"
+                                            alt="Michael Taylor">
+                                        <div class="reviewer-info">
+                                            <h5 class="card-title mb-0">Michael T.</h5>
+                                            <div class="rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h6 class="review-date">Posted on March 10, 2023</h6>
+                                    <p class="card-text">Great phone overall, but I wish it had a faster charging option.
+                                        The camera system is phenomenal though, especially in low light conditions.</p>
+
+                                    <button class="btn btn-outline-secondary btn-reply"
+                                        onclick="toggleReplyForm('replyForm3')">
+                                        <i class="fas fa-reply me-1"></i>Reply
+                                    </button>
+
+                                    <div class="reply-section" id="replyForm3" style="display: none;">
+                                        <div class="review-header">
+                                            <img src="https://placehold.co/40x40/6c757d/white?text=Y" class="profile-img"
+                                                alt="You">
+                                            <div class="reviewer-info">
+                                                <h6 class="card-title mb-0">Your Reply</h6>
+                                            </div>
+                                        </div>
+                                        <form class="reply-form">
+                                            <div class="mb-2">
+                                                <textarea class="form-control" rows="2" placeholder="Write your reply..."></textarea>
+                                            </div>
+                                            <button type="button" class="btn btn-primary btn-sm">Post Reply</button>
+                                            <button type="button" class="btn btn-outline-secondary btn-sm"
+                                                onclick="toggleReplyForm('replyForm3')">Cancel</button>
+                                        </form>
+                                    </div>
+
+                                    <!-- Reply from seller -->
+                                    <div class="reply-section">
+                                        <div class="review-header">
+                                            <img src="https://placehold.co/40x40/28a745/white?text=NM" class="profile-img"
+                                                alt="Next Mart">
+                                            <div class="reviewer-info">
+                                                <h6 class="card-title mb-0">Next Mart Support</h6>
+                                                <span class="review-date">March 11, 2023</span>
+                                            </div>
+                                        </div>
+                                        <p class="mb-0">Thank you for your feedback, Michael. We'll share your suggestion
+                                            about faster charging with our product team for future models.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -273,6 +416,150 @@
     </div>
 
 @endsection
+
+@push('styles')
+    <style>
+        .product-image {
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .thumbnail {
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .thumbnail:hover,
+        .thumbnail.active {
+            border-color: #0d6efd;
+            transform: scale(1.05);
+        }
+
+        .price {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #198754;
+        }
+
+        .original-price {
+            text-decoration: line-through;
+            color: #6c757d;
+        }
+
+        .discount-badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            z-index: 1;
+        }
+
+        .quantity-btn {
+            width: 40px;
+            height: 40px;
+        }
+
+        .add-to-cart-btn {
+            padding: 12px 30px;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .product-info-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .specs-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .specs-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .specs-list li:last-child {
+            border-bottom: none;
+        }
+
+        .specs-list i {
+            color: #0d6efd;
+            width: 25px;
+        }
+
+        .review-card {
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+            margin-bottom: 20px;
+        }
+
+        .rating {
+            color: #fd7e14;
+        }
+
+        .profile-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .review-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .reviewer-info {
+            margin-left: 15px;
+        }
+
+        .review-date {
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        .reply-section {
+            margin-left: 65px;
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+        }
+
+        .reply-form {
+            margin-top: 10px;
+        }
+
+        .review-form {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        .star-rating {
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .star-rating .far {
+            color: #ccc;
+        }
+
+        .star-rating .fas {
+            color: #fd7e14;
+        }
+
+        .btn-reply {
+            font-size: 0.85rem;
+            padding: 3px 10px;
+        }
+    </style>
+@endpush
 
 @push('scripts')
     <script>
@@ -303,5 +590,54 @@
 
         // Initialize first thumbnail as active
         document.querySelector('.thumbnail').classList.add('active');
+
+        // Star rating functionality
+        const stars = document.querySelectorAll('.star-rating .fa-star');
+        const ratingInput = document.getElementById('ratingValue');
+
+        stars.forEach(star => {
+            star.addEventListener('mouseover', function() {
+                const rating = this.getAttribute('data-rating');
+                highlightStars(rating);
+            });
+
+            star.addEventListener('mouseout', function() {
+                highlightStars(ratingInput.value);
+            });
+
+            star.addEventListener('click', function() {
+                const rating = this.getAttribute('data-rating');
+                ratingInput.value = rating;
+                highlightStars(rating);
+            });
+        });
+
+        function highlightStars(rating) {
+            stars.forEach(star => {
+                const starRating = star.getAttribute('data-rating');
+                if (starRating <= rating) {
+                    star.classList.remove('far');
+                    star.classList.add('fas');
+                } else {
+                    star.classList.remove('fas');
+                    star.classList.add('far');
+                }
+            });
+        }
+
+        // Toggle reply form
+        function toggleReplyForm(formId) {
+            const form = document.getElementById(formId);
+            form.style.display = form.style.display === 'none' ? 'block' : 'none';
+        }
+
+        // Review form submission
+        document.getElementById('reviewForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your review! It will be published after moderation.');
+            this.reset();
+            ratingInput.value = 0;
+            highlightStars(0);
+        });
     </script>
 @endpush
