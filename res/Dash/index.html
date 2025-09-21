@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+
+
+<!-- Sidebar -->
+<div class="sidebar d-flex flex-column p-3">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <div class="brand d-flex align-items-center gap-2">
+      <div class="bg-primary text-white rounded-3 d-flex align-items-center justify-content-center" style="width:44px;height:44px">ND</div>
+      <div>
+        <div>User Panel</div>
+        <div class="small-muted">NextDigit</div>
+      </div>
+    </div>
+    <button class="btn btn-sm d-lg-none" id="sidebarToggle"><i class="fa fa-bars"></i></button>
+  </div>
+  <hr>
+  <ul class="nav nav-pills flex-column mb-auto">
+    <li><a href="index.html" class="nav-link active"><i class="fa-solid fa-home me-2"></i> Dashboard</a></li>
+    <li><a href="orders.html" class="nav-link"><i class="fa-solid fa-bag-shopping me-2"></i> Orders</a></li>
+    <li><a href="cart.html" class="nav-link"><i class="fa-solid fa-cart-shopping me-2"></i> Cart</a></li>
+    <li><a href="profile.html" class="nav-link"><i class="fa-solid fa-user me-2"></i> Profile</a></li>
+  </ul>
+  <hr>
+  <div class="px-3 pb-3 small-muted">© NextDigit</div>
+</div>
+
+<!-- Main -->
+<main>
+<header>
+    <nav class="navbar navbar-expand-lg theme-navbar bg-info-subtle">
+        <div class="container-fluid mx-5">
+            <!-- Left section: Logo -->
+            <a class="navbar-brand" href="">
+                <h2 class="text-light text-logo">Next Mart</h2>
+            </a>
+
+            <!-- Mobile toggle button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <!-- Center section: Search box -->
+                <div class="d-flex mx-auto my-2 my-lg-0 position-relative"
+                    style="min-width: 400px; max-width: 700px; width: 60%;">
+                    <input class="form-control pe-5" type="search" placeholder="Search products..."
+                        aria-label="Search">
+                    <button class="btn btn-link text-secondary position-absolute end-0 top-50 translate-middle-y"
+                        type="submit">
+                        <i class="fa-solid fa-search"></i>
+                    </button>
+                </div>
+
+                <!-- Right section: Navigation items -->
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item ms-2">
+                        <a href="{{ url('/cart-list/product') }}" class="btn btn-success btn-sm text-light">
+                            <i class="fa-solid fa-cart-shopping"></i> Cart
+                            <span class="badge bg-danger ms-1">3</span>
+                        </a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a href="#" class="btn btn-sm theme-orange-btn text-light">
+                            <i class="fa-solid fa-user"></i> Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  </header>
+
+  <div class="card p-3 mb-4 mt-3">
+    <h4>Welcome, Reza!</h4>
+    <div class="d-flex align-items-center gap-2">
+      <img src="https://i.pravatar.cc/40" class="rounded-circle" alt="User">
+      <strong>Reza</strong>
+    </div>
+  </div>
+
+  <!-- Metrics -->
+  <div class="row g-3 mb-3">
+    <div class="col-sm-6 col-xl-3">
+      <div class="card p-3">
+        <div class="small-muted">Orders</div>
+        <h5>5</h5>
+      </div>
+    </div>
+    <div class="col-sm-6 col-xl-3">
+      <div class="card p-3">
+        <div class="small-muted">Pending Payments</div>
+        <h5>$129</h5>
+      </div>
+    </div>
+    <div class="col-sm-6 col-xl-3">
+      <div class="card p-3">
+        <div class="small-muted">Cart Items</div>
+        <h5>3</h5>
+      </div>
+    </div>
+    <div class="col-sm-6 col-xl-3">
+      <div class="card p-3">
+        <div class="small-muted">Wishlist</div>
+        <h5>8</h5>
+      </div>
+    </div>
+  </div>
+
+  <!-- Recent Orders Table -->
+  <div class="card p-3 mb-4">
+    <h6>Recent Orders</h6>
+    <table class="table table-hover align-middle mt-2">
+      <thead>
+        <tr>
+          <th>Order</th>
+          <th>Date</th>
+          <th>Status</th>
+          <th class="text-end">Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>#OD1001</td>
+          <td>2025-09-18</td>
+          <td><span class="badge bg-info text-dark">Processing</span></td>
+          <td class="text-end">$129</td>
+        </tr>
+        <tr>
+          <td>#OD1002</td>
+          <td>2025-09-16</td>
+          <td><span class="badge bg-success">Delivered</span></td>
+          <td class="text-end">$59</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+ <!-- Footer -->
+  <footer class="mt-auto py-3 text-center small text-muted">
+    <div class="container-fluid bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <h5>Next Mart</h5>
+                    <p>Your one-stop shop for all your needs. Quality products at affordable prices.</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-light me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-light me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-light me-2"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Shop</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Electronics</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Fashion</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Home & Kitchen</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Beauty & Health</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Books</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Customer Service</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Contact Us</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">FAQ</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Returns & Refunds</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Shipping Policy</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Newsletter</h5>
+                    <p>Subscribe to get special offers, free giveaways, and new product alerts.</p>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your email" aria-label="Email">
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="theme-footer bg-primary text-light text-center p-3">
+        © 2025 Copyright:
+        <a class="text-decoration-none theme-footer-btn text-light" href="{{ url('/') }}">NextMart.com</a>
+    </div>
+  </footer>
+</main>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Include your external JavaScript file -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

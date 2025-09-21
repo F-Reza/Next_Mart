@@ -1,0 +1,44 @@
+:root{
+  --sidebar-width: 260px;
+  --bg: #f6f8fb;
+  --card: #ffffff;
+  --muted: #6c757d;
+}
+html,body{height:100%;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial}
+body{background:var(--bg);}
+
+/* Sidebar */
+.sidebar{
+  width:var(--sidebar-width);
+  min-height:100vh;
+  background:linear-gradient(180deg,#0d6efd 0%, #0b5ed7 100%);
+  color:#fff;
+  position:fixed;
+  left:0;top:0;bottom:0;overflow:auto;
+  z-index: 1000;
+}
+.sidebar .nav-link{color:rgba(255,255,255,0.9);padding:0.6rem 1rem}
+.sidebar .nav-link.active{background:rgba(255,255,255,0.08);border-radius:8px}
+.brand{padding:1.25rem 1.25rem;font-weight:700;letter-spacing:0.2px}
+.border-white-10{border-color:rgba(255,255,255,0.12)!important}
+
+/* Main area */
+main{margin-left:var(--sidebar-width);padding:1.5rem;min-height:100vh}
+.topbar{height:64px;background:transparent;display:flex;align-items:center;justify-content:space-between}
+.card{border:none;border-radius:12px;box-shadow:0 6px 18px rgba(18,38,63,0.06)}
+.metric .h5{font-weight:700}
+.table thead th{border-bottom:0}
+.small-muted{color:var(--muted);font-size:0.85rem}
+.search-input{max-width:360px}
+
+/* Auth pages */
+.auth-wrap{min-height:100vh;display:flex;align-items:center;justify-content:center}
+
+/* Utilities */
+img.rounded-circle{object-fit:cover}
+
+/* Responsive */
+@media (max-width:991px){
+  .sidebar{position:relative;width:100%;min-height:auto}
+  main{margin-left:0}
+}
