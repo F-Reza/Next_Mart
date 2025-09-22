@@ -2,12 +2,14 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\SubCategoryController;
 use App\Http\Controllers\ProductDetailsController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\CheckoutController;
+
 
 Route::get('/main', function () {
     return ('welcome');
@@ -18,6 +20,8 @@ Route::get('/register', [AuthController::class, 'register'])->name('register');
 
 Route::post('/login', [AuthController::class, 'userLogin'])->name('login');
 Route::post('/register', [AuthController::class, 'userStore'])->name('register');
+
+Route::get('/user-dash', [UserController::class, 'userDash'])->name('user-dash');
 
 
 Route::get('/', [HomeController::class, 'index'])->name('home');

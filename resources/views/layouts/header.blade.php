@@ -34,7 +34,7 @@
                         </a>
                     </li>
                     <li class="nav-item ms-2">
-                        <a href="#" class="btn btn-sm theme-orange-btn text-light">
+                        <a href="{{ url('/user-dash') }}" class="btn btn-sm theme-orange-btn text-light">
                             <i class="fa-solid fa-user"></i> Login
                         </a>
                     </li>
